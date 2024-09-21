@@ -1,0 +1,453 @@
+*{
+ margin: 0;
+ padding: 0;
+ box-sizing: border-box;
+font-family: Arial, Helvetica, sans-serif;
+}
+body{
+  background-color: #0000;
+}
+.main{
+  height: 300vh;
+  width: 100%;
+  background-color: #0c0c0c;
+  overflow-x: hidden;
+}
+.main .navbar{ 
+  width: 100%;
+  height: 70px;
+  background-color: black;
+  display: flex;
+  align-items: center;
+  justify-content: space-evenly;
+  position:fixed;
+  top:0;
+  left: 0;
+  z-index: 1;
+}
+.main .navbar .content .details .summary{
+  color: aliceblue;
+  text-decoration: none;
+}
+.main .navbar .content .details .summary:hover{
+  color: yellow;
+  text-decoration: underline;
+}
+.main .navvar .content .details .summary:active{
+  color: crimson;
+  text-decoration: none;
+}
+.main .navbar .content a:link{
+ color: aliceblue;
+ text-decoration: none;
+}
+.main .navbar .content a:visited{
+  color: white;
+  text-decoration: none;
+}
+.main .navbar .content a:hover{
+  color: yellow;
+
+  text-decoration: underline;
+}
+.main.navbar .content a:active{
+  color: crimson;
+  text-decoration: none;
+}
+
+.main .navbar .logo{
+  position: relative;
+  left: -150px;
+}
+.main .navbar .content{
+  display: flex;
+  gap: 20px;
+  font-size: large;
+  font-family:'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif
+}
+
+.main .navbar .box a:link{
+  color: black;
+  font-weight: 800;
+  font-family:'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+  background-color: rgb(200, 158, 19);
+  height: 35px;
+  width: 140px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border-radius: 10px;
+  text-decoration: none;
+}
+.main .navbar .box a:visited{
+  color: black;
+  text-decoration: none;
+  font-family:'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+  
+}
+.main .navbar .box a:hover{
+  color: white;
+  text-decoration: underline;
+  font-family:'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif; 
+}
+.main .navbar .media{
+  display: flex;
+  gap: 30px;
+  font-size: large;
+}
+
+/*navbar Ends*/
+.main .slideshow .left{
+  background-color: yellow;
+  height: 580px;
+  width: 70%;
+  z-index: 0;
+}
+.main .slideshow .right{
+  background-color: black;
+  height: 580px;
+  width: 30%;
+  
+  bottom: 510px;
+}
+.main .slideshow .lr{
+  display: flex;
+}
+
+.main .slideshow .left .image1{
+  height: 580px;
+  width: 100%;
+}
+
+.main .slideshow .right .h3{
+  color: white;
+  font-size: 15px;
+  font-family:'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+  position: relative;
+  top:100px;
+  margin-left: 30px;
+}
+.main .slideshow .right .h1{
+  color: white;
+  font-size: 35px;
+  font-family:'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+ position: relative;
+ top:100px;
+ margin-left: 30px;
+}
+.main .slideshow .right .watchnow{
+  height: 60px;
+  width: 200px;
+  border: 1px solid white;
+  border-radius: 5px;
+  font-family:'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+  position: relative;
+  top: 7.5rem;
+  left: 30px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: black;
+  color: white;
+  font-size: 18px;
+  font-weight: 700;
+}
+.main .slideshow .watchnow:hover{
+  background-color: rgb(206, 162, 16);
+  color: black;
+  border: 1px solid black;
+  transition:all 0.1s ease-out;
+}
+
+/*slideshow ends*/
+.main .message{
+  height: 80px;
+  width: 100%;
+  background-color: black;
+  font-size: 30px;
+  color: white;
+  font-family:'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+  position:relative;
+  top: -510px;
+  display: flex;
+  justify-content:flex-start;
+  padding-top: 35px;
+}
+
+.main .section{
+  position: relative;
+  top: -509px;
+  display: flex;
+  justify-content:space-evenly ;
+}
+
+.main .section .game1{
+  height: 600px;
+  width: 30%;
+  background-color: black;
+}
+.main .section .game2{
+  height: 600px;
+  width: 30%;
+  background-color: black;
+}
+.main .section .game3{
+  height: 600px;
+  width: 30%;
+  background-color: black;
+}
+
+
+
+/* Section starts */
+.Sections{
+  padding-top: 70px;
+}
+.Sections .containerGrid{
+  position: relative;
+  top:20px;
+  display: grid;
+  grid-template-columns: repeat(3,430px);
+  justify-content: space-evenly;
+  gap: 30px;
+}
+.Sections .head1{
+  color:white;
+  font-size: 27px;
+  font-weight: 700;
+  position: relative;
+  left: 20px;
+}
+
+.Sections .containerGrid .parts{
+  border:1px solid white;
+  height: 520px;
+}
+
+.Sections .containerGrid .parts .img1 img{
+  height: 380px;
+  width: 100%; 
+}
+.Sections .containerGrid .parts .img2 img{
+  height: 380px;
+  width: 100%; 
+}
+.Sections .containerGrid .parts .img3 img{
+  height: 380px;
+  width: 100%; 
+}
+.Sections .containerGrid .parts .img4 img{
+  height: 380px;
+  width: 100%; 
+}
+.Sections .containerGrid .parts .img5 img{
+  height: 380px;
+  width: 100%; 
+}
+.Sections .containerGrid .parts .img6 img{
+  height: 380px;
+  width: 100%; 
+}
+
+.Sections .containerGrid .parts .info p{
+  color: white;
+  font-size: 18px;
+  padding-top: 20px;
+  padding-left: 10px;
+}
+.Sections .containerGrid .parts .info h1{
+  color: white;
+  font-size: 25px;
+  padding-top: 15px;
+  padding-left: 10px;
+}
+
+.Sections .containerGrid .parts .info2 p{
+  color: white;
+  font-size: 18px;
+  padding-top: 20px;
+  padding-left: 10px;
+}
+.Sections .containerGrid .parts .info2 h1{
+  color: white;
+  font-size: 25px;
+  padding-top: 06px;
+  padding-left: 10px;
+}
+
+.Sections .containerGrid .parts .info3 p{
+  color: white;
+  font-size: 18px;
+  padding-top: 20px;
+  padding-left: 10px;
+}
+.Sections .containerGrid .parts .info3 h1{
+  color: white;
+  font-size: 25px;
+  padding-top: 06px;
+  padding-left: 10px;
+}
+
+.Sections .containerGrid .parts .info4 p{
+  color: white;
+  font-size: 18px;
+  padding-top: 20px;
+  padding-left: 10px;
+}
+.Sections .containerGrid .parts .info4 h1{
+  color: white;
+  font-size: 25px;
+  padding-top: 06px;
+  padding-left: 10px;
+}
+
+.Sections .containerGrid .parts .info5 p{
+  color: white;
+  font-size: 18px;
+  padding-top: 20px;
+  padding-left: 10px;
+}
+.Sections .containerGrid .parts .info5 h1{
+  color: white;
+  font-size: 25px;
+  padding-top: 06px;
+  padding-left: 10px;
+}
+
+.Sections .containerGrid .parts .info6 p{
+  color: white;
+  font-size: 18px;
+  padding-top: 20px;
+  padding-left: 10px;
+}
+.Sections .containerGrid .parts .info6 h1{
+  color: white;
+  font-size: 25px;
+  padding-top: 06px;
+  padding-left: 10px;
+}
+
+.main .sen p{
+  color: white;
+  font-size: 20px;
+  text-decoration: underline yellow;
+  font-weight: 700;
+  display: flex;
+  justify-content: center;
+  position: relative;
+  top: 50px;
+}
+
+.boxes .head2{
+ color: white;
+ font-size: 30px;
+ font-weight: 700;
+ font-family:monospace;
+ position: relative;
+ top: 150px;
+ left: 30px;
+}
+.boxes{
+  height: 650px;
+  width: 100%;
+  
+
+  justify-content: center;
+
+}
+.boxes .gta6 {
+ width: 80%;
+ height: 400px;
+position: relative;
+top:150px;
+margin: 30px auto;
+}
+.boxes .gta6 img{
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+
+.dabba{
+    position: relative;
+    top:20px;
+  }
+
+.dabba .photo{
+  border:1px solid white;
+  height: 350px;
+}
+
+.dabbaParent{
+  display: grid;
+  grid-template-columns: repeat(4,250px);
+  justify-content: space-evenly;
+  gap: 30px;
+}
+
+.dabba .photo img{
+  height: 350px;
+  width: 100%;
+}
+
+/* footer section */
+
+footer{
+  margin-top: 60px;
+  height: 500px;
+  width: 100%;
+  background-color: black;
+  display: grid;
+ 
+  grid-template-columns: repeat(2,auto);
+  gap:10px;
+}
+
+footer .elem{
+  margin-top: 50px;
+  
+}
+footer .e1{
+  display: flex;
+  gap: 40px;
+  margin-left: 50px;
+
+}
+footer .e1 a{
+  
+  text-decoration: none;
+  color: white;
+  font-size: 18px;
+}
+
+footer .e2 span{
+  color:white;
+  display: flex;
+  justify-content: center;
+}
+footer .e3 {
+  margin-left: 50px;
+}
+footer .e3 a{
+  text-decoration: none;
+  color: white;
+  line-height: 40px;
+}
+footer .e5{
+  margin-left:50px ;
+}
+footer .e5 span{
+  color: white;
+}
+footer .e6 span{
+  color:white;
+}
+
+.main footer .e1:hover{
+  color: yellow;
+  text-decoration: underline;
+}
+
+
+
